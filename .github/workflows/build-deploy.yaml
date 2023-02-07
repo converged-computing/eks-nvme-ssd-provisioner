@@ -56,4 +56,4 @@ jobs:
       if: (github.event_name != 'pull_request')
       run: |
         docker push ${{ env.container }}:latest
-        podman push ${{ env.container }}:alpine
+        docker push ${{ env.container }}:alpine
